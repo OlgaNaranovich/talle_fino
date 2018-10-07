@@ -1,0 +1,22 @@
+{
+  "name": "tallefinoproject",
+  "description": "my first project",
+  "main": "index.js",
+  "authors": [
+    "Olga N"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-equalheights": "jquery-equal-heights#*",
+    "fotorama": "^4.6.4"
+  }
+}
