@@ -1,0 +1,51 @@
+.reviews
+	background-size: cover
+	background-position: center
+	max-height: 740px
+	.reviews-wrap
+		text-align: center
+		padding: 50px 0
+		h2
+			color: $grey
+			font-size: 2em
+			line-height: 1.5
+			margin-bottom: 30px
+			font-weight: 100
+			span
+				color: #fff
+
+.owl-carousel-reviews
+	.owl-carousel-reviews-item
+		h3
+			margin: 0
+			text-transform: none
+			font-size: 2em
+			font-family: 'OpenSansLightItalic', sans-serif
+			font-weight: 100
+			color: #fff
+			position: relative
+			&:before, &:after
+				content: ''
+				position: absolute
+				top: 18px
+				background: url('../img/reviews_figure.png') no-repeat
+				width: 100%
+				height: 30px
+			&:before
+				left: 13%
+			&:after
+				right: 13%
+				transform: scale(-1, 1)
+		p
+			padding: 20px 10px 50px
+			position: relative
+
+.owl-carousel-reviews
+	.owl-nav
+		button.owl-prev, button.owl-next
+			background-color: transparent
+			height: 32px
+		button.owl-prev
+			left: -5%
+		button.owl-next
+			right: -5%

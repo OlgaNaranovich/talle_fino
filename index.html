@@ -1,93 +1,66 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="ru">
-<!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 
-	<title>Заголовок</title>
-	<meta content="" name="description" />
-	<meta content="" property="og:image" />
-	<meta content="" property="og:description" />
-	<meta content="" property="og:site_name" />
-	<meta content="website" property="og:type" />
-
-	<meta content="telephone=no" name="format-detection" />
-	<meta http-equiv="x-rim-auto-match" content="none">
+	<title>Talle Fino</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="shortcut icon" href="favicon.png" />
-
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css" />
-	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="libs/fotorama/fotorama.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css" />	
-	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-	<header>
+	<header class="header section-light" id="main">
+		<nav class="nav top-line">
+			<ul>
+				<li><a href="#main">главная</a></li>
+				<li><a href="#services">услуги</a></li>
+				<li><a href="#about">о нас</a></li>
+				<li><a href="#reviews">отзывы</a></li>
+				<li><a href="#contacts">контакты</a></li>
+			</ul>
+		</nav>
 
-		<div class="bg" style="background-image: url(img/bg_header.jpg);">
-			<div class="h_overlay">
-				
-				<nav class="nav top-line">
-					<ul>
-						<li><a href="#">главная</a></li>
-						<li><a href="#">услуги</a></li>
-						<li><a href="#">о нас</a></li>
-						<li><a href="#">отзывы</a></li>
-						<li><a href="#">контакты</a></li>
-					</ul>
-				</nav>
-
-				<div class="logo-composition">
-					<div class="logo-img"><img src="img/logo-big.png" alt="TalleFino"></div>
-					<div class="button"><a href="#">записаться</a></div>
-				</div>
-
-				<div class="bottom-line">
-
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="address"><i class="fa fa-map-marker"></i>ул. Кальварийская, 16<br/>БЦ «Парус», каб. 327</div>
-							</div>
-							
-							
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="phone"><i class="fa fa-phone"></i>+375 44 588-88-04<br/>+375 29 762-59-76</div>
-							</div>
-							
-						</div>
-					</div>
-					
-					<a href="#"><img class="arrow_header" src="img/arrow_header.png" alt="Далее"></a>
-								
-				</div>
-
-			</div>
+		<div class="logo-composition">
+			<h1 class="logo-img"><img src="img/logo.svg" alt="TalleFino"></h1>
+			<div class="button"><a href="#">записаться</a></div>
 		</div>
 
+		<div class="bottom-line">
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="address"><i class="fa fa-map-marker"></i>ул. Кальварийская, 16<br/>БЦ «Парус», каб. 327</div>
+					</div>
+
+
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="phone"><i class="fa fa-phone"></i>+375 44 588-88-04<br/>+375 29 762-59-76</div>
+					</div>
+
+				</div>
+			</div>
+
+			<a href="#"><img class="arrow_header" src="img/arrow_header.png" alt="Далее"></a>
+
+		</div>
+		<div class="anchor" id="services"></div>
 	</header>
 
 	<section class="section1 section-green">
 
 		<div class="owl-carousel owl-carousel-s1">
-			
+
 			<div class="owl-carousel-item">
-				<div class="owl-carousel-image" style="background-image: url(img/section1-1.jpg)"></div>
+				<div class="owl-carousel-image" style="background-image: url('./img/section1-1.jpg');"></div>
 				<div class="owl-carousel-content">
 					<img src="img/logo_mini.png" alt="TalleFino">
 					<h3>миостимуляция</h3>
@@ -101,7 +74,7 @@
 			</div>
 
 			<div class="owl-carousel-item">
-				<div class="owl-carousel-image" style="background-image: url(img/section1-2.jpg)"></div>
+				<div class="owl-carousel-image" style="background-image: url('./img/section1-2.jpg');"></div>
 				<div class="owl-carousel-content">
 					<img src="img/logo_mini.png" alt="TalleFino">
 					<h3>миостимуляция</h3>
@@ -115,7 +88,7 @@
 			</div>
 
 			<div class="owl-carousel-item">
-				<div class="owl-carousel-image" style="background-image: url(img/section1-3.jpg)"></div>
+				<div class="owl-carousel-image" style="background-image: url('./img/section1-3.jpg');"></div>
 				<div class="owl-carousel-content">
 					<img src="img/logo_mini.png" alt="TalleFino">
 					<h3>миостимуляция</h3>
@@ -129,7 +102,7 @@
 			</div>
 
 			<div class="owl-carousel-item">
-				<div class="owl-carousel-image" style="background-image: url(img/section1-4.jpg)"></div>
+				<div class="owl-carousel-image" style="background-image: url('./img/section1-4.jpg');"></div>
 				<div class="owl-carousel-content">
 					<img src="img/logo_mini.png" alt="TalleFino">
 					<h3>миостимуляция</h3>
@@ -144,34 +117,35 @@
 
 		</div>
 
+		<div class="anchor" id="about"></div>
 	</section>
 
-	<section class="section2" style="background-image: url(img/bg_section2.jpg)">
-		
-		<div class="s2_overlay section-grey">
+	<section class="section2 section-light">
+
+		<div class="s2_overlay">
 
 			<div class="container">
-				<div class="row">
+				<div class="row fotorama-row">
 					<div class="col-md-7">
 						<div class="s2_content">
 							<h2><span>Talle</span>Fino</h2>
 							<p>Наша студия коррекции фигуры Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span>sed do eiusmod</span> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <span>laboris</span> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 							<p>Excepteur sint <span>occaecat cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim. id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 						</div>
-						
+
 					</div>
 
 					<div class="col-md-5">
 						<div class="fotorama s2_fotorama" data-width="100%" data-nav="thumbs" data-thumbBorderWidth="4" data-thumbBorderColor="#467f0d" data-thumbWidth="84" data-thumbHeight="128" data-thumbMargin="4">
-							<a href="../img/fotorama/foto-1.jpg"><img src="../img/fotorama/small/foto-1.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-2.jpg"><img src="../img/fotorama/small/foto-2.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-3.jpg"><img src="../img/fotorama/small/foto-3.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-4.jpg"><img src="../img/fotorama/small/foto-4.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-5.jpg"><img src="../img/fotorama/small/foto-5.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-2.jpg"><img src="../img/fotorama/small/foto-2.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-3.jpg"><img src="../img/fotorama/small/foto-3.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-4.jpg"><img src="../img/fotorama/small/foto-4.jpg" alt="foto"></a>
-							<a href="../img/fotorama/foto-5.jpg"><img src="../img/fotorama/small/foto-5.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-1.jpg"><img src="img/fotorama/small/foto-1.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
+							<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
 						</div>
 					</div>
 				</div>
@@ -179,38 +153,39 @@
 
 		</div>
 
+		<div class="anchor" id="reviews"></div>
 	</section>
-	
+
 	<section class="reviews section-green">
 
-		
 		<div class="container">
 			<div class="row ">
 				<div class="col-md-10 col-md-offset-1">
-							<div class="reviews-wrap">
-			<h2><span>отзывы</span><br/>наших клиентов</h2>
-			<div class="owl-carousel owl-carousel-reviews">
-				<div class="owl-carousel-reviews-item">
-					<h3>Наталья</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
-				</div>
-				<div class="owl-carousel-reviews-item">
-					<h3>Наталья</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
-				</div>
-				<div class="owl-carousel-reviews-item">
-					<h3>Наталья</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
-				</div>
-			</div>
-		</div>
+					<div class="reviews-wrap">
+						<h2><span>отзывы</span><br/>наших клиентов</h2>
+						<div class="owl-carousel owl-carousel-reviews">
+							<div class="owl-carousel-reviews-item">
+								<h3>Наталья</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
+							</div>
+							<div class="owl-carousel-reviews-item">
+								<h3>Елена</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
+							</div>
+							<div class="owl-carousel-reviews-item">
+								<h3>Виктория</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="anchor" id="contacts"></div>
 	</section>
 
-	<section class="contacts" style="background-image: url(img/Minsk.jpg)">
+	<section class="contacts section-light">
 		<div class="contacts_overlay section-grey">
 			<h2><span>наши</span> контакты</h2>
 
@@ -224,8 +199,8 @@
 								</p>
 							</div>
 							<div class="col-md-6">
-								<p><strong>Телефоны:</strong><br/>+375 44 588-88-04<br/>+375 29 762-59-76
-								</br><strong>8bms.by</strong><br/>tallefino@gmail.com</p>
+								<p><strong>Телефоны:</strong><br/>+375 44 588-88-04<br/>+375 29 762-59-76</br>
+								<strong>8bms.by</strong><br/>tallefino@gmail.com</p>
 							</div>
 						</div>
 						<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2926207c036547489eee64686a9f2d6b290a482c218c12c3b3563ec5857ba2b3&amp;lang=ru_RU&amp;scroll=true"></script></div>
@@ -258,7 +233,7 @@
 									<option>Прессотерапия</option>
 								</select>
 							</div>
-							
+
 							<button class="button">Отправить</button>
 
 						</form>
@@ -293,37 +268,11 @@
 		</div>
 	</footer>
 
-
-	<div class="hidden"></div>
-	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
-	<div class="device-xs visible-xs"></div>
-	<div class="device-sm visible-sm"></div>
-	<div class="device-md visible-md"></div>
-	<div class="device-lg visible-lg"></div>
-	<!-- end mandatory -->
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
 <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="libs/countdown/jquery.plugin.js"></script>
 <script src="libs/fotorama/fotorama.js"></script>
-<script src="libs/countdown/jquery.countdown.min.js"></script>
-<script src="libs/countdown/jquery.countdown-ru.js"></script>
-<script src="libs/landing-nav/navigation.js"></script>
 <script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
-<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
 <script src="libs/jquery-equalheights/jquery.equalheights.min.js"></script>
-<script src="libs/stellar/jquery.stellar.min.js"></script>
 <script src="js/common.js"></script>
-<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
 </html>

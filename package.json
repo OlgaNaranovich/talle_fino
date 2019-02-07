@@ -12,7 +12,12 @@
     "owl.carousel": "^2.3.3",
     "sync": "^0.2.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ajv": "^5.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

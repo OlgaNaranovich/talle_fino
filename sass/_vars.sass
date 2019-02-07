@@ -1,0 +1,30 @@
+$font-default: 'Raleway light', sans-serif
+$accent: #b2cb8c
+$green: #467f0d
+$grey: #505050
+$accent-light: #dddec2
+
+=background ($property)
+	background: url($property) center no-repeat
+
+%section-light
+	background-color: rgba($accent-light, .91)
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: -1
+
+%section-green
+	background: $accent url('../img/bg-section1.jpg') no-repeat
+	position: relative
+
+
+
+//93c04f
+//eba47a
+//99baca

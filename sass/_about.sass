@@ -1,0 +1,57 @@
+.section2
+	@extend %section-light
+	&:after
+		+background ("../img/bg_section2.jpg")
+		-webkit-background-size: cover
+		background-size: cover
+	.s2_content
+		//margin: 25% 0
+		text-align: center
+		h2
+			color: #fff
+			text-transform: none
+			font-size: 3em
+			margin-top: 25px
+			span
+				color: $green
+		p
+			text-align: justify
+			span
+				color: #fff
+
+.fotorama
+	margin: 70px 0
+	&__nav-wrap
+		position: absolute
+		bottom: 10px
+		padding: 20px 4px
+		width: 100%
+	&__thumb
+		border: 3px solid #fff
+		transition: border-color .5s ease
+		&-border
+			border-color: darken($accent, 20)
+	&__active
+		.fotorama__thumb
+		border-color: darken($accent, 20)
+	&__arr
+		&--prev, &--next
+			&::before
+				padding: 20px 16px
+				background-size: cover
+				background-repeat: no-repeat
+				opacity: .4
+		&--next
+			right: -2px
+			&::before
+				right: 0
+				content: ''
+				background-image: url(../img/arrow_right_s2.png)
+		&--prev
+			left: 0
+			&::before
+				content: ''
+				background-image: url(../img/arrow_left_s2.png)
+.fotorama-row
+	display: flex
+	align-items: center

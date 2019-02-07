@@ -1,0 +1,87 @@
+// SECTION1 owl-carousel
+
+.section-green
+	@extend %section-green
+	.owl-carousel-image
+		height: 50%
+		background-size: cover
+		background-position: center
+
+	.owl-carousel-content
+		height: 50%
+		text-align: center
+		color: #fff
+		img
+			width: 30%
+			display: inline-block
+			margin-top: 20px
+		h3
+			margin: 0
+			font-size: 1.3em
+		.services
+			p
+				padding: 3px 0
+				font-family: 'OpenSansLight', sans-serif
+				span
+					border-bottom: 1px solid rgba(#fff, .3)
+					padding: 7px 30px
+					strong
+						color: lighten($grey, 5%)
+		.button
+			margin: 50px 0
+			font-size: .75em
+
+.owl-carousel-s1
+	.owl-carousel-item
+		display: flex
+		flex-direction: column
+		opacity: .8
+		transition: opacity .4s ease
+		&:hover
+			opacity: 1
+.owl-carousel-s1
+	.owl-item:nth-child(2n) .owl-carousel-item
+		flex-direction: column-reverse
+
+.owl-carousel-s1, .owl-carousel-reviews
+	position: relative
+	.owl-nav
+		position: absolute
+		width: 100%
+		opacity: .7
+		top: 42%
+		button.owl-prev, button.owl-next
+			width: 60px
+			height: 90px
+			position: absolute
+			color: #fff
+			background-color: rgba(#fff, .3)
+			span
+				display: none
+		button.owl-prev
+			background-image: url(../img/arrow_left_s1.png)
+			background-repeat: no-repeat
+			background-position: center
+			left: 0
+			border-radius: 0 3px 3px 0
+		button.owl-next
+			background-image: url(../img/arrow_right_s1.png)
+			background-repeat: no-repeat
+			background-position: center
+			border-radius: 3px 0 0 3px
+			right: 0
+
+//items-3colors
+
+.owl-carousel-s1
+	.owl-item:nth-child(3n+1) .owl-carousel-item
+		background-color: #93c04f
+
+.owl-carousel-s1
+	.owl-item:nth-child(3n+2) .owl-carousel-item
+		background-color: #eba47a
+
+.owl-carousel-s1
+	.owl-item:nth-child(3n+3) .owl-carousel-item
+		background-color: #99baca
+//items-3colors--end

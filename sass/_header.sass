@@ -1,0 +1,89 @@
+.header
+	@extend %section-light
+	max-height: 900px
+	&:after
+		+background ("../img/bg_header.jpg")
+		-webkit-background-size: cover
+		background-size: cover
+
+	.top-line
+		width: 100%
+		height: 70px
+		background-color: rgba(#d8d9c1, .9)
+		border-bottom: 1px solid rgba(#fff, .3)
+		text-align: center
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 5
+		ul
+			padding: 20px 0 15px
+			li
+				display: inline-block
+				padding: 0 21px
+				a
+					font-size: 1.1em
+					border-bottom: 1px solid transparent
+					transition: color .2s ease, border-color .4s ease
+					&:hover, &:focus
+						color: #fff
+						border-color: #efefef
+					&:focus
+						font-weight: bold
+
+.logo-composition
+	text-align: center
+	padding-top: 100px
+	position: relative
+	.logo-img
+		img
+			max-width: 60%
+
+.button
+	margin: 100px auto
+	display: inline-block
+	font-family: 'OpenSans', sans-serif
+	border-bottom: 1px solid $green
+	border-radius: 5px
+	background-color: #f7f5d5
+	font-size: 1.1em
+	padding: 10px 20px 8px
+	transition: all .25s ease
+	&:hover
+		background-color: $accent
+		a
+			color: #fff
+			font-weight: 500
+	&:focus
+		background-color: darken($accent, 10%)
+		a
+			color: #fff
+
+.bottom-line
+	background-color: rgba(#333, .05)
+	border-top: 1px solid rgba(#fff, .3)
+	position: relative
+	.address, .phone
+		font-family: 'OpenSansLight', sans-serif
+		font-size: .9em
+		line-height: 1.4
+		color: $grey
+		padding: 10px 0 10px 15px
+		position: relative
+		.fa
+			color: $grey
+			position: absolute
+			top: 12px
+	.address
+		.fa
+			left: 0
+	.phone
+		float: right
+		.fa
+			right: 130px
+
+	.arrow_header
+		position: absolute
+		left: 50%
+		top: 25%
+		width: 30px
