@@ -1,5 +1,3 @@
-// import $ from '../libs/jquery/jquery-1.11.1.min';
-
 $(document).ready(() => {
   $('.owl-carousel-s1').on('initialized.owl.carousel', () => {
     setTimeout(() => {
@@ -18,7 +16,7 @@ $(document).ready(() => {
     autoplayTimeout: 4000,
     touchDrag: true,
     autoplayHoverPause: true,
-    responsive: { // Адаптивность. Кол-во выводимых элементов при определенной ширине.
+    responsive: {
       0: {
         items: 1,
       },
@@ -47,7 +45,7 @@ $(document).ready(() => {
   function carouselS1() {
     $('.owl-carousel-item').each(function () {
       const ths = $(this);
-      const thsHeight = ths.find('.owl-carousel-content').outerHeight();
+      const thsHeight = ths.find('.owl-carousel-content').outerHeight(true);
       ths.find('.owl-carousel-image').css('min-height', thsHeight);
     });
   }carouselS1();

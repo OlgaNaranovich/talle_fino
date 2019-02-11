@@ -1,6 +1,51 @@
+@keyframes tremble
+	0%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform:  translate(0, 0)
+		transform: translate(0, 0)
+	2.5%
+		-webkit-transform: translate(3px, 0)
+		-moz-transform: translate(3px, 0)
+		-ms-transform:  translate(3px, 0)
+		transform: translate(3px, 0)
+	5%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform:  translate(0, 0)
+		transform: translate(0, 0)
+	7.5%
+		-webkit-transform: translate(3px, 0)
+		-moz-transform: translate(3px, 0)
+		-ms-transform:  translate(3px, 0)
+		transform: translate(3px, 0)
+	10%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform:  translate(0, 0)
+		transform: translate(0, 0)
+	12.5%
+		-webkit-transform: translate(3px, 0)
+		-moz-transform: translate(3px, 0)
+		-ms-transform:  translate(3px, 0)
+		transform: translate(3px, 0)
+	15%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform:  translate(0, 0)
+		transform: translate(0, 0)
+	100%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform:  translate(0, 0)
+		transform: translate(0, 0)
 .header
 	@extend %section-light
 	max-height: 900px
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
 	&:after
 		+background ("../img/bg_header.jpg")
 		-webkit-background-size: cover
@@ -62,26 +107,56 @@
 .bottom-line
 	background-color: rgba(#333, .05)
 	border-top: 1px solid rgba(#fff, .3)
-	position: relative
+	position: absolute
+	width: 100%
+	bottom: 0
 	.address, .phone
-		font-family: 'OpenSansLight', sans-serif
+		font-family: 'OpenSans', sans-serif
 		font-size: .9em
 		line-height: 1.4
 		color: $grey
-		padding: 10px 0 10px 15px
+		padding: 10px 0 10px 25px
+		-webkit-transition: all .3s
+		-moz-transition: all .3s
+		-ms-transition: all .3s
+		-o-transition: all .3s
+		transition: all .3s
 		position: relative
-		.fa
-			color: $grey
+		&:hover svg
+			fill: $green
+			animation: tremble 5s infinite
+			//animation-delay: 10s
+		&:hover p, &:hover .phone__numbers a
+			color: #485f25
+		svg
+			fill: $grey
 			position: absolute
-			top: 12px
+			top: 20px
 	.address
-		.fa
+		svg
 			left: 0
 	.phone
 		float: right
-		.fa
+		svg
 			right: 130px
-
+	.title
+		cursor: pointer
+		&::after
+			content: attr(data-title)
+			opacity: 0
+			transition: all .3s
+			position: absolute
+			top: -20px
+			left: 40px
+			z-index: 3
+			color: #485f25
+			border: 1px solid $green
+			-webkit-border-radius: 3px
+			-moz-border-radius: 3px
+			border-radius: 3px
+			padding: 2px 20px
+		&:hover::after
+			opacity: 1
 	.arrow_header
 		position: absolute
 		left: 50%
