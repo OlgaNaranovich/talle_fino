@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/owl.carousel.2.1.0/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="libs/fotorama/fotorama.css" />
+	<link rel="stylesheet" href="libs/jquery-nice-select-1.1.0/css/nice-select.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -208,7 +209,7 @@
 	</section>
 
 	<section class="contacts section-light">
-		<div class="contacts_overlay section-grey">
+		<div class="contacts_overlay">
 			<h2><span>наши</span> контакты</h2>
 
 			<div class="container">
@@ -225,10 +226,11 @@
 								<strong>8bms.by</strong><br/>tallefino@gmail.com</p>
 							</div>
 						</div>
-						<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2926207c036547489eee64686a9f2d6b290a482c218c12c3b3563ec5857ba2b3&amp;lang=ru_RU&amp;scroll=true"></script></div>
+						<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2926207c036547489eee64686a9f2d6b290a482c218c12c3b3563ec5857ba2b3&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
 					</div>
 					<div class="col-md-6">
-						<form class="collback">
+						<form class="request">
 							<div class="success"><span>Спасибо за заявку!</span></div>
 
 							<!-- Hidden Required Fields -->
@@ -239,30 +241,24 @@
 
 							<input type="hidden" name="Страница" value="">
 
-							<div class="collback-logo"><img src="img/logo_mini.png" alt="TalleFino"></div>
+							<div class="request-logo"><img src="img/logo_mini.png" alt="TalleFino"></div>
 							<div class="form-h3">Оставить заявку</div>
 							<p>Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
-
 							<input type="text" name="Имя" placeholder="Ваше имя..." required>
 							<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
-							<div class="select-wrap">
-								<select class="select" name="Услуги">
-									<option value disabled selected hidden>Выберите услугу...</option>
-									<option>Миостимуляция</option>
-									<option>Вакуумный массаж</option>
-									<option>Роликовый тренажер</option>
-									<option>Инфракрасные штаны</option>
-									<option>Прессотерапия</option>
-								</select>
-							</div>
-
+							<select class="select" name="Услуги">
+								<option data-display="Выберите услугу..." disabled hidden>Выберите услугу...</option>
+								<option>Миостимуляция</option>
+								<option>Вакуумный массаж</option>
+								<option>Роликовый тренажер</option>
+								<option>Инфракрасные штаны</option>
+								<option>Прессотерапия</option>
+							</select>
 							<button class="button">Отправить</button>
-
 						</form>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
@@ -297,12 +293,12 @@
 			</div>
 		</div>
 	</footer>
-
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="libs/fotorama/fotorama.js"></script>
 <script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
 <script src="libs/jquery-equalheights/jquery.equalheights.min.js"></script>
+<script src="libs/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+<script src="libs/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

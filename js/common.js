@@ -55,3 +55,7 @@ $(document).ready(() => {
     onLoad: true,
   });
 });
+
+$(document).ready(function() {
+  $('select').niceSelect();
+});
