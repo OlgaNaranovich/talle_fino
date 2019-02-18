@@ -6,9 +6,10 @@
 	<title>Talle Fino</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="libs/owl.carousel.2.1.0/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="libs/fotorama/fotorama.css" />
 	<link rel="stylesheet" href="libs/jquery-nice-select-1.1.0/css/nice-select.css" />
@@ -18,8 +19,10 @@
 <body>
 
 	<header class="header section-light" id="main">
+		
 		<nav class="nav top-line">
-			<ul>
+			<div class="toggle-menu">menu</div>
+			<ul class="nav__list">
 				<li><a href="#main">главная</a></li>
 				<li><a href="#services">услуги</a></li>
 				<li><a href="#about">о нас</a></li>
@@ -38,7 +41,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 address-wrap">
 						<div class="address title" data-title="Look at the Map">
 							<svg  width="20" viewbox="0 0 32.7 35">
 								<use xlink:href="img/svg/location_icon.svg#location"></use>
@@ -47,26 +50,24 @@
 						</div>
 					</div>
 
-
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 phone-wrap">
 						<div class="phone title" data-title="Call Us">
 							<svg  width="20" viewBox="0 0 32.7 35">
 								<use xlink:href="img/svg/phone_icon.svg#phone"></use>
 							</svg>
 							<div class="phone__numbers">
-								<a href="tel:+375-44-588-88-04">+375 44 588-88-04</a></br>
+								<a href="tel:+375-44-588-88-04">+375 44 588-88-04</a><br>
 								<a href="tel:+375-29-762-59-76">+375 29 762-59-76</a>
 							</div>
-
 						</div>
 					</div>
 
 				</div>
 			</div>
 
-			<a href="#services"><img class="arrow_header" src="img/arrow_header.png" alt="Далее"></a>
+			<a class="header__arrow" href="#services"><img class="arrow_img" src="img/arrow_header.png" alt="Далее"></a>
 
-		</div>
+		</div> <!-- END bottom-line -->
 		<div class="anchor" id="services"></div>
 	</header>
 
@@ -184,18 +185,18 @@
 		<div class="container">
 			<div class="row ">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="reviews-wrap">
-						<h2><span>отзывы</span><br/>наших клиентов</h2>
-						<div class="owl-carousel owl-carousel-reviews">
-							<div class="owl-carousel-reviews-item">
+					<div class="reviews__content">
+						<h2><span>отзывы</span><br>наших клиентов</h2>
+						<div class="owl-carousel reviews__owl-carousel">
+							<div class="reviews__owl-carousel--item">
 								<h3>Наталья</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
 							</div>
-							<div class="owl-carousel-reviews-item">
+							<div class="reviews__owl-carousel--item">
 								<h3>Елена</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
 							</div>
-							<div class="owl-carousel-reviews-item">
+							<div class="reviews__owl-carousel--item">
 								<h3>Виктория</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquam quaerat voluptatem.</p>
 							</div>
@@ -209,46 +210,32 @@
 	</section>
 
 	<section class="contacts section-light">
-		<div class="contacts_overlay">
-			<h2><span>наши</span> контакты</h2>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-6">
-								<p><strong>Адрес:</strong><br/>г.Минск<br/>ст.м. Фрунзенская,<br/>ул. Кальварийская, 16<br/>
-									БЦ «Парус», каб.327 (2 этаж)
-								</p>
-							</div>
-							<div class="col-md-6">
-								<p><strong>Телефоны:</strong><br/>+375 44 588-88-04<br/>+375 29 762-59-76</br>
-								<strong>8bms.by</strong><br/>tallefino@gmail.com</p>
-							</div>
+		<h2 class="h2"><span>наши</span> контакты</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<p class="contacts__text"><strong>Адрес:</strong><br>г.Минск<br>ст.м. Фрунзенская,<br>ул. Кальварийская, 16<br>БЦ «Парус», каб.327 (2 этаж)</p>
 						</div>
-						<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2926207c036547489eee64686a9f2d6b290a482c218c12c3b3563ec5857ba2b3&amp;lang=ru_RU&amp;scroll=true"></script>
+						<div class="col-md-6 col-sm-6">
+							<p class="contacts__text"><strong>Телефоны:</strong><br>+375 44 588-88-04<br>+375 29 762-59-76<br><strong>8bms.by</strong><br>tallefino@gmail.com</p>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<form class="request">
-							<div class="success"><span>Спасибо за заявку!</span></div>
+					<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2926207c036547489eee64686a9f2d6b290a482c218c12c3b3563ec5857ba2b3&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+				</div>
+				<div class="col-md-6">
 
-							<!-- Hidden Required Fields -->
-							<input type="hidden" name="project_name" value="TalleFino">
-							<input type="hidden" name="admin_email" value="naranovicholga@gmail.com">
-							<input type="hidden" name="form_subject" value="Заявка с сайта TalleFino">
-							<!-- END Hidden Required Fields -->
-
-							<input type="hidden" name="Страница" value="">
-
-							<div class="request-logo"><img src="img/logo_mini.png" alt="TalleFino"></div>
-							<div class="form-h3">Оставить заявку</div>
-							<p>Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
-							<input type="text" name="Имя" placeholder="Ваше имя..." required>
-							<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+					<div class="request">
+						<div class="request__logo"><img src="img/logo_mini.png" alt="TalleFino"></div>
+						<div class="request__text">Оставить заявку</div>
+						<p class="request-callback">Оставьте заявку и мы перезвоним вам в&nbsp;течение 15&nbsp;минут</p>
+						<form class="request__form">
+							<input class="input" type="text" name="Имя" placeholder="Ваше имя..." required>
+							<input class="input" type="text" name="Телефон" placeholder="Ваш телефон..." required>
 							<select class="select" name="Услуги">
-								<option data-display="Выберите услугу..." disabled hidden>Выберите услугу...</option>
-								<option>Миостимуляция</option>
+								<option selected>Миостимуляция</option>
 								<option>Вакуумный массаж</option>
 								<option>Роликовый тренажер</option>
 								<option>Инфракрасные штаны</option>
@@ -256,10 +243,10 @@
 							</select>
 							<button class="button">Отправить</button>
 						</form>
-					</div>
+					</div> <!-- END request__content -->
 				</div>
-			</div>
-		</div>
+			</div> <!-- END row -->
+		</div> <!-- END container -->
 	</section>
 
 	<footer class="footer">
@@ -279,23 +266,24 @@
 				</div>
 				<div class="col-md-3">
 					<div class="footer__social">
-						<svg viewBox="0 0 40 40" width="30" height="30">
-							<use xlink:href="img/svg/facebook-40x40.svg#facebook"></use>
-						</svg>
-						<svg viewBox="0 0 40 40" width="30" height="30">
-							<use xlink:href="img/svg/instagram-40x40.svg#instagram"></use>
-						</svg>
-						<svg viewBox="0 0 40 40" width="30" height="30">
-							<use xlink:href="img/svg/vk-40x40.svg#vk"></use>
-						</svg>
+						<a href="#"><svg viewBox="0 0 40 40" width="40" height="40">
+								<use xlink:href="img/svg/facebook-40x40.svg#facebook"></use>
+							</svg></a>
+						<a href="#"><svg viewBox="0 0 40 40" width="40" height="40">
+								<use xlink:href="img/svg/instagram-40x40.svg#instagram"></use>
+							</svg></a>
+						<a href="#"><svg viewBox="0 0 40 40" width="40" height="40">
+								<use xlink:href="img/svg/vk-40x40.svg#vk"></use>
+							</svg></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+
 <script src="libs/fotorama/fotorama.js"></script>
-<script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
+<script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <script src="libs/jquery-equalheights/jquery.equalheights.min.js"></script>
 <script src="libs/owl.carousel.2.1.0/owl.carousel.min.js"></script>
 <script src="libs/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>

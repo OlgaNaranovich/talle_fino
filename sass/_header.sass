@@ -50,7 +50,6 @@
 		+background ("../img/bg_header.jpg")
 		-webkit-background-size: cover
 		background-size: cover
-
 	.top-line
 		width: 100%
 		height: 70px
@@ -61,11 +60,20 @@
 		top: 0
 		left: 0
 		z-index: 5
-		ul
+		.toggle-menu
+			display: none
+			text-transform: uppercase
+			padding: 0 20px
+			color: #fff
+			z-index: 6
+			font-size: 1.5em
+			margin: 15px auto
+		.nav__list
 			padding: 20px 0 15px
 			li
 				display: inline-block
 				padding: 0 21px
+				text-transform: uppercase
 				a
 					font-size: 1.1em
 					border-bottom: 1px solid transparent
@@ -76,89 +84,69 @@
 					&:focus
 						font-weight: bold
 
-.logo-composition
-	text-align: center
-	padding-top: 100px
-	position: relative
-	.logo-img
-		img
-			max-width: 60%
-
-.button
-	margin: 100px auto
-	display: inline-block
-	font-family: 'OpenSans', sans-serif
-	border-bottom: 1px solid $green
-	border-radius: 5px
-	background-color: #f7f5d5
-	font-size: 1.1em
-	padding: 10px 20px 8px
-	transition: all .25s ease
-	&:hover
-		background-color: $accent
-		a
-			color: #fff
-			font-weight: 500
-	&:focus
-		background-color: darken($accent, 10%)
-		a
-			color: #fff
-
-.bottom-line
-	background-color: rgba(#333, .05)
-	border-top: 1px solid rgba(#fff, .3)
-	position: absolute
-	width: 100%
-	bottom: 0
-	.address, .phone
-		font-family: 'OpenSans', sans-serif
-		font-size: .9em
-		line-height: 1.4
-		color: $grey
-		padding: 10px 0 10px 25px
-		-webkit-transition: all .3s
-		-moz-transition: all .3s
-		-ms-transition: all .3s
-		-o-transition: all .3s
-		transition: all .3s
+	.logo-composition
+		text-align: center
+		padding-top: 100px
 		position: relative
-		&:hover svg
-			fill: $green
-			animation: tremble 5s infinite
-			//animation-delay: 10s
-		&:hover p, &:hover .phone__numbers a
-			color: #485f25
-		svg
-			fill: $grey
-			position: absolute
-			top: 20px
-	.address
-		svg
-			left: 0
-	.phone
-		float: right
-		svg
-			right: 130px
-	.title
-		cursor: pointer
-		&::after
-			content: attr(data-title)
-			opacity: 0
-			transition: all .3s
-			position: absolute
-			top: -20px
-			left: 40px
-			z-index: 3
-			color: #485f25
-			border: 1px solid $green
-			-webkit-border-radius: 3px
-			-moz-border-radius: 3px
-			border-radius: 3px
-			padding: 2px 20px
-		&:hover::after
-			opacity: 1
-	.arrow_header
+		.logo-img
+			img
+				max-width: 60%
+	.bottom-line
+		background-color: rgba(#333, .05)
+		border-top: 1px solid rgba(#fff, .3)
 		position: absolute
-		left: 50%
-		top: 25%
-		width: 30px
+		width: 100%
+		bottom: 0
+		.address, .phone
+			font-family: 'OpenSans', sans-serif
+			font-size: .9em
+			line-height: 1.4
+			color: $gray
+			padding: 10px 0 10px 25px
+			-webkit-transition: all .3s
+			-moz-transition: all .3s
+			-ms-transition: all .3s
+			-o-transition: all .3s
+			transition: all .3s
+			position: relative
+			&:hover svg
+				fill: $green
+				animation: tremble 5s infinite
+				//animation-delay: 10s
+			&:hover p, &:hover .phone__numbers a
+				color: #485f25
+			svg
+				fill: $gray
+				position: absolute
+				top: 20px
+		.address
+			svg
+				left: 0
+		.phone
+			float: right
+			svg
+				right: 130px
+		.title
+			cursor: pointer
+			&::after
+				content: attr(data-title)
+				opacity: 0
+				transition: all .3s
+				position: absolute
+				top: -20px
+				left: 40px
+				z-index: 3
+				color: #485f25
+				border: 1px solid $green
+				-webkit-border-radius: 3px
+				-moz-border-radius: 3px
+				border-radius: 3px
+				padding: 2px 20px
+			&:hover::after
+				opacity: 1
+	.header__arrow
+		.arrow_img
+			position: absolute
+			left: 50%
+			top: 25%
+			width: 30px

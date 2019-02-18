@@ -1,11 +1,12 @@
 .contacts
 	@extend %section-light
 	text-align: center
+	padding-bottom: 30px
 	&:after
 		+background ("../img/Minsk.jpg")
 		-webkit-background-size: cover
 		background-size: cover
-	h2
+	.h2
 		margin: 0
 		padding: 50px
 		color: #fff
@@ -13,110 +14,57 @@
 		line-height: 1.1
 		span
 			color: $green
-	p
+	&__text
 		text-align: left
-		font-family: 'Open Sans', sans-serif
+		font-family: 'OpenSansLight', sans-serif
 		font-size: 1.1em
 		line-height: 1.5
-		color: $grey
-		padding: 8px 0
-
+		color: $gray
+		padding: 10px 0
 	.map
-		margin: 15px
+		margin: 15px 
 		float: left
 		width: 96%
 		height: 280px
 		border: 1px solid rgba($green, .5)
-	.request
-		position: relative
-		.form-h3
-			margin: 25px 0 0
-			font-size: 2.5em
-			color: $green
-			font-weight: bold
-			line-height: 1.1
-		p
-			font-size: 1em
-			color: $grey
-			text-align: center
-			padding: 10px 0
-			margin: 0
-		.button
-			text-transform: uppercase
-			color: $grey
-			border: 0
-			border-bottom: 1px solid $green
-			margin: 10px 0
-			&:hover
-				color: #fff
-		// input, textarea, select
-		// 	&::-webkit-input-placeholder
-		// 		color: #fff
-		// 		opacity: 1
-		// 	&::-moz-placeholder
-		// 		color: #fff
-		// 		opacity: 1
-		// 	&::-moz-placeholder
-		// 		color: #fff
-		// 		opacity: 1
-		// 	&::-ms-input-placeholder
-		// 		color: #fff
-		// 		opacity: 1
-			option
-				font-size: 1.1em
-		// .select-wrap
-		// 	position: relative
-		// 	&::before
-		// 		content: "\f107"
-		// 		font-family: "FontAwesome"
-		// 		position: absolute
-		// 		top: 18px
-		// 		right: 10px
-		// 		color: #fff
-		// 		font-size: 1.1em
-		// 		option
-		// 			font-size: 1.1em
-
-
-input, textarea, select
-	background-color: lighten($accent, 7%)
-	border: 1px solid rgba($green, .2)
-	border-bottom: 2px solid rgba($green, .2)
-	border-radius: 2px
-	padding: 8px 12px
-	display: inline-block
-	margin: 10px 0
-	width: 100%
-	font-size: 1.1em
-	color: #fff
-	&:focus
-		outline: none
-		background-color: $accent
-select
-	-webkit-appearance: none
-	-moz-appearance: none
-		appearance: none
-
-.collback
-	.success
-		display: none
-		background-color: rgba($accent, .8)
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		text-transform: uppercase
+	.request__text
+		margin: 25px 0 0
+		font-size: 2.5em
+		color: $green
 		font-weight: bold
-		color: #fff
-		// display: flex
-		z-index: 10
-		span
-			margin: auto
-		& ~ *
-			transition: all .5s ease
-		&.active
-			& ~ *
-				opacity: .5
-				filter: blur(2.5px)
+		line-height: 1.1
+	.button
+		text-transform: uppercase
+		color: $gray
+		border: 0
+		border-bottom: 1px solid $green
+		margin: 10px 0
+		&:hover
+			color: #fff
+.request__form
+	position: relative
+	.input, .nice-select
+		font-family: "OpenSansLight", sans-serif
+		background-color: rgba(#f8ffe7, .4)
+		border: 1px solid rgba($dark-green, .6)
+		border-radius: 5px
+		padding: 0 12px
+		display: inline-block
+		margin: 10px 0
+		width: 100%
+		height: 40px
+		font-size: 1em
+		transition: all .2s 
+		&:focus
+			background-color: transparent
+			box-shadow: inset 0 0 10px rgba(#ffffff, .8)
+	.nice-select
+		.current
+			color: #666
+		.list
+			width: 100%
+			color: #666
+			li:hover, li:focus, .selected
+				background-color: #e0e6cd
+			
 

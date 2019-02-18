@@ -29,7 +29,7 @@ $(document).ready(() => {
     },
   });
 
-  $('.owl-carousel-reviews').owlCarousel({
+  $('.reviews__owl-carousel').owlCarousel({
     loop: true,
     items: 1,
     mouseDrag: true,

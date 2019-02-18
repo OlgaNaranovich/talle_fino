@@ -16,8 +16,10 @@
 *
 	margin: 0
 	padding: 0
+
 html, body
 	min-height: 100%
+
 body
 	font-family: $font-default
 	font-size: 16px
@@ -34,30 +36,51 @@ body
 	width: 100%
 	height: auto
 
-.parallax
-	background: fixed 50% 0
-	position: relative
-
 .row
 	padding: 0
 	margin: 0
 
-h1, h2, h3, h4, a, ul, li
+h1, h2, h3, h4, a
 	text-transform: uppercase
 
 h2, h3
 	font-weight: 100
 
 a
-	color: $grey
+	color: $gray
 	&:hover, &:focus
 		outline: none
-button:hover, button:focus
+		text-decoration: none
+button:hover, button:focus, input:focus
 	outline: none
-
+.button
+		margin: 100px auto
+		display: inline-block
+		font-family: 'OpenSans', sans-serif
+		border-bottom: 1px solid $green
+		border-radius: 5px
+		background-color: #f7f5d5
+		font-size: 1.1em
+		padding: 10px 20px 8px
+		transition: all .25s ease
+		&:hover
+			background-color: $accent
+			a
+				color: #fff
+				font-weight: 500
+		&:focus
+			background-color: darken($accent, 10%)
+			a
+				color: #fff
 .anchor
 	width: 100%
 	height: 70px
 	position: absolute
 	bottom: 0
 	z-index: -1
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active 
+	transition: background-color 5000s ease-in-out 0s

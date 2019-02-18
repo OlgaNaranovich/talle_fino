@@ -1,3 +1,55 @@
 @media only screen and (max-width: 991px)
 	.fotorama-row
 		display: block
+
+@media only screen and (max-width: 768px)
+	.header .top-line .toggle-menu
+		display: block
+	.header
+		.nav
+			&__list
+				display: none
+		.logo-composition
+			padding: 0
+		.bottom-line
+			padding-bottom: 10px
+			.address-wrap, .phone-wrap
+				text-align: center
+			.address, .phone
+				text-align: center
+				display: inline-block
+				padding-bottom: 0
+			.phone
+				float: none
+			.header__arrow
+				display: none
+			.title:after
+				visibility: hidden
+	.reviews__owl-carousel 
+		h3:after, h3:before
+			visibility: hidden
+	.contacts
+		&__text
+			text-align: center
+		.map
+			margin-bottom: 50px
+		.request__logo
+			display: none
+	.footer
+		&__author
+			min-height: 0
+			.author, .copyright
+				line-height: 1
+
+@media only screen and (max-width: 480px)
+	.header .logo-composition .logo-img img 
+		max-width: 90%
+	.reviews__owl-carousel
+		.owl-nav 
+			.owl-prev
+				left: -25px
+			.owl-next
+				right: -25px
+		.request-text
+			text-align: center
+
