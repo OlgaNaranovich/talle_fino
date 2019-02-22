@@ -133,7 +133,7 @@ button:hover, button:focus, input:focus {
 }
 
 .button {
-  margin: 100px auto;
+  margin: 5% auto;
   display: inline-block;
   font-family: "OpenSans", sans-serif;
   border-bottom: 1px solid #467f0d;
@@ -227,14 +227,14 @@ input:-webkit-autofill:active {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header:after {
   background: url("../img/bg_header.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
-.header .top-line {
+.header .nav {
   width: 100%;
   height: 70px;
   background-color: rgba(216, 217, 193, 0.9);
@@ -245,39 +245,47 @@ input:-webkit-autofill:active {
   left: 0;
   z-index: 5;
 }
-.header .top-line .toggle-menu {
-  display: none;
+.header .nav .toggle-menu {
   text-transform: uppercase;
-  padding: 0 20px;
-  color: #fff;
+  color: #ffffff;
   z-index: 6;
   font-size: 1.5em;
-  margin: 15px auto;
+  margin: 1% auto;
+  display: none;
 }
-.header .top-line .nav__list {
+.header .nav .nav__list {
   padding: 20px 0 15px;
 }
-.header .top-line .nav__list li {
+.header .nav .nav__list li {
   display: inline-block;
   padding: 0 21px;
   text-transform: uppercase;
 }
-.header .top-line .nav__list li a {
+.header .nav .nav__list li a {
   font-size: 1.1em;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.4s ease;
 }
-.header .top-line .nav__list li a:hover, .header .top-line .nav__list li a:focus {
+.header .nav .nav__list li a:hover, .header .nav .nav__list li a:focus {
   color: #fff;
   border-color: #efefef;
 }
-.header .top-line .nav__list li a:focus {
+.header .nav .nav__list li a:focus {
   font-weight: bold;
+}
+.header .nav .nav-show {
+  display: block;
+  background-color: rgba(216, 217, 193, 0.9);
+}
+.header .nav .nav-show li {
+  display: block;
+  padding: 10px 0;
+}
+.header .top-line-hidden {
+  height: 70px;
 }
 .header .logo-composition {
   text-align: center;
-  padding-top: 100px;
-  position: relative;
 }
 .header .logo-composition .logo-img img {
   max-width: 60%;
@@ -285,7 +293,7 @@ input:-webkit-autofill:active {
 .header .bottom-line {
   background-color: rgba(51, 51, 51, 0.05);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
@@ -306,7 +314,7 @@ input:-webkit-autofill:active {
   fill: #467f0d;
   animation: tremble 5s infinite;
 }
-.header .bottom-line .address:hover p, .header .bottom-line .address:hover .phone__numbers a, .header .bottom-line .phone:hover p, .header .bottom-line .phone:hover .phone__numbers a {
+.header .bottom-line .address:hover .location-link__text, .header .bottom-line .address:hover .phone__numbers a, .header .bottom-line .phone:hover .location-link__text, .header .bottom-line .phone:hover .phone__numbers a {
   color: #485f25;
 }
 .header .bottom-line .address svg, .header .bottom-line .phone svg {
@@ -314,14 +322,22 @@ input:-webkit-autofill:active {
   position: absolute;
   top: 20px;
 }
+.header .bottom-line .address {
+  float: left;
+}
+.header .bottom-line .address .location-link__text {
+  text-transform: none;
+}
 .header .bottom-line .address svg {
   left: 0;
+  background: url("../img/svg/location_icon.svg") no-repeat;
 }
 .header .bottom-line .phone {
   float: right;
 }
 .header .bottom-line .phone svg {
   right: 130px;
+  background: url("../img/svg/phone_icon.svg") no-repeat;
 }
 .header .bottom-line .title {
   cursor: pointer;
@@ -339,25 +355,26 @@ input:-webkit-autofill:active {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding: 2px 20px;
+  padding: 2px 10px;
 }
 .header .bottom-line .title:hover::after {
   opacity: 1;
 }
-.header .header__arrow .arrow_img {
+.header .header__arrow {
   position: absolute;
   left: 50%;
+  transform: translate(-50%);
   top: 25%;
+}
+.header .header__arrow .arrow_img {
   width: 30px;
 }
 
 .section-green .owl-carousel-image {
-  height: 50%;
   background-size: cover;
   background-position: center;
 }
 .section-green .owl-carousel-content {
-  height: 50%;
   text-align: center;
   color: #fff;
 }
@@ -380,13 +397,14 @@ input:-webkit-autofill:active {
   color: #5d5d5d;
 }
 .section-green .owl-carousel-content .button {
-  margin: 50px 0;
+  margin: 8% 0;
   font-size: 0.75em;
 }
 
 .owl-carousel-s1 .owl-carousel-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   opacity: 0.8;
   transition: opacity 0.4s ease;
 }
@@ -469,8 +487,13 @@ input:-webkit-autofill:active {
   color: #fff;
 }
 
-.fotorama {
-  margin: 70px 0;
+.s2__fotorama {
+  margin: 10% 0;
+  height: 90%;
+}
+
+.fotorama__wrap {
+  height: 100%;
 }
 .fotorama__nav-wrap {
   position: absolute;
@@ -512,7 +535,7 @@ input:-webkit-autofill:active {
 
 .fotorama-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .reviews {
@@ -698,21 +721,23 @@ input:-webkit-autofill:active {
   fill: #f2f4e1;
 }
 
-@media only screen and (max-width: 991px) {
-  .fotorama-row {
-    display: block;
+@media only screen and (max-width: 992px) {
+  .owl-carousel-s1 .owl-carousel-item {
+    flex-direction: row;
+  }
+  .owl-carousel-s1 .owl-item:nth-child(2n) .owl-carousel-item {
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 768px) {
+  .header .top-line {
+    height: 50px;
+  }
   .header .top-line .toggle-menu {
     display: block;
   }
-
   .header .nav__list {
     display: none;
-  }
-  .header .logo-composition {
-    padding: 0;
   }
   .header .bottom-line {
     padding-bottom: 10px;
@@ -724,8 +749,6 @@ input:-webkit-autofill:active {
     text-align: center;
     display: inline-block;
     padding-bottom: 0;
-  }
-  .header .bottom-line .phone {
     float: none;
   }
   .header .bottom-line .header__arrow {
@@ -755,10 +778,24 @@ input:-webkit-autofill:active {
   .footer__author .author, .footer__author .copyright {
     line-height: 1;
   }
+
+  .anchor {
+    height: 50px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header .logo-composition .logo-img img {
     max-width: 90%;
+  }
+
+  .section2 .fotorama-row {
+    display: block;
+  }
+  .section2 .fotorama {
+    overflow: visible;
+  }
+  .section2 .fotorama__nav-wrap {
+    bottom: -80px;
   }
 
   .reviews__owl-carousel .owl-nav .owl-prev {

@@ -13,7 +13,7 @@ $(document).ready(() => {
     dots: false,
     smartSpeed: 1000,
     autoplay: false,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
     touchDrag: true,
     autoplayHoverPause: true,
     responsive: {
@@ -23,7 +23,7 @@ $(document).ready(() => {
       600: {
         items: 2,
       },
-      1000: {
+      992: {
         items: 3,
       },
     },
@@ -59,3 +59,22 @@ $(document).ready(() => {
 $(document).ready(function() {
   $('select').niceSelect();
 });
+
+const body = document.querySelector('.body');
+const header = document.querySelector('.header');
+const navList = document.querySelector('.nav__list');
+const toggleMenu = document.querySelector('.toggle-menu');
+const nav = document.querySelector('.nav');
+nav.addEventListener('click', function() {
+  if (body.offsetWidth <= 768) {
+    if (!navList.classList.contains('nav-show')) {
+      navList.classList.add('nav-show');
+      toggleMenu.style.display = 'none';
+    } else {
+      navList.classList.remove('nav-show');
+      toggleMenu.style.display = 'block';
+    }
+    console.log(navList);
+  }
+});
+console.log(header.offsetHeight);

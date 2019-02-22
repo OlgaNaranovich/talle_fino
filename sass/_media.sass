@@ -1,16 +1,19 @@
-@media only screen and (max-width: 991px)
-	.fotorama-row
-		display: block
+@media only screen and (max-width: 992px)
+	.owl-carousel-s1
+		.owl-carousel-item
+			flex-direction: row
+		.owl-item:nth-child(2n) .owl-carousel-item
+			flex-direction: row
 
 @media only screen and (max-width: 768px)
-	.header .top-line .toggle-menu
-		display: block
-	.header
+	.header 
+		.top-line
+			height: 50px
+			.toggle-menu
+				display: block
 		.nav
 			&__list
 				display: none
-		.logo-composition
-			padding: 0
 		.bottom-line
 			padding-bottom: 10px
 			.address-wrap, .phone-wrap
@@ -19,7 +22,6 @@
 				text-align: center
 				display: inline-block
 				padding-bottom: 0
-			.phone
 				float: none
 			.header__arrow
 				display: none
@@ -40,10 +42,18 @@
 			min-height: 0
 			.author, .copyright
 				line-height: 1
-
+	.anchor
+		height: 50px
 @media only screen and (max-width: 480px)
 	.header .logo-composition .logo-img img 
 		max-width: 90%
+	.section2
+		.fotorama-row
+				display: block
+		.fotorama
+			overflow: visible
+			&__nav-wrap
+				bottom: -80px
 	.reviews__owl-carousel
 		.owl-nav 
 			.owl-prev

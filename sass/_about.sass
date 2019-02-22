@@ -17,9 +17,12 @@
 			text-align: justify
 			span
 				color: #fff
-
+.s2__fotorama
+	margin: 10% 0
+	height: 90%
 .fotorama
-	margin: 70px 0
+	&__wrap
+		height: 100%
 	&__nav-wrap
 		position: absolute
 		bottom: 10px
@@ -51,6 +54,7 @@
 			&::before
 				content: ''
 				background-image: url(../img/arrow_left_s2.png)
+
 .fotorama-row
 	display: flex
-	align-items: center
+	align-items: flex-start

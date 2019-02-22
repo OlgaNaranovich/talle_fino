@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body">
 
 	<header class="header section-light" id="main">
 		
@@ -30,7 +30,7 @@
 				<li><a href="#contacts">контакты</a></li>
 			</ul>
 		</nav>
-
+		<div class="top-line-hidden"></div>
 		<div class="logo-composition">
 			<h1 class="logo-img"><img src="img/svg/logo-text.svg" alt="TalleFino"></h1>
 			<div class="button"><a href="#">записаться</a></div>
@@ -43,10 +43,12 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 address-wrap">
 						<div class="address title" data-title="Look at the Map">
-							<svg  width="20" viewbox="0 0 32.7 35">
-								<use xlink:href="img/svg/location_icon.svg#location"></use>
-							</svg>
-							<p>ул. Кальварийская, 16<br/>БЦ «Парус», каб. 327</p>
+							<a class="location-link" href="#contacts">
+								<svg  width="20" viewbox="0 0 32.7 35">
+									<use xlink:href="img/svg/location_icon.svg#location"></use>
+								</svg>
+								<span class="location-link__text">ул. Кальварийская, 16<br/>БЦ «Парус», каб. 327</span>
+							</a>
 						</div>
 					</div>
 
@@ -146,35 +148,31 @@
 
 	<section class="section2 section-light">
 
-		<div class="s2_overlay">
-
-			<div class="container">
-				<div class="row fotorama-row">
-					<div class="col-md-7">
-						<div class="s2_content">
-							<h2><span>Talle</span>Fino</h2>
-							<p>Наша студия коррекции фигуры Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span>sed do eiusmod</span> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <span>laboris</span> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-							<p>Excepteur sint <span>occaecat cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim. id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-						</div>
-
+		<div class="container">
+			<div class="row fotorama-row">
+				<div class="col-xs-12 col-sm-6 col-md-7">
+					<div class="s2_content">
+						<h2><span>Talle</span>Fino</h2>
+						<p>Наша студия коррекции фигуры Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span>sed do eiusmod</span> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <span>laboris</span> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<p>Excepteur sint <span>occaecat cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim. id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 					</div>
 
-					<div class="col-md-5">
-						<div class="fotorama s2_fotorama" data-width="100%" data-nav="thumbs" data-thumbBorderWidth="4" data-thumbBorderColor="#467f0d" data-thumbWidth="84" data-thumbHeight="128" data-thumbMargin="4">
-							<a href="img/fotorama/foto-1.jpg"><img src="img/fotorama/small/foto-1.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
-							<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
-						</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-5">
+					<div class="fotorama s2__fotorama" data-width="100%" data-nav="thumbs" data-thumbBorderWidth="3" data-thumbBorderColor="#467f0d" data-thumbWidth="60" data-thumbHeight="80" data-thumbMargin="15">
+						<a href="img/fotorama/foto-1.jpg"><img src="img/fotorama/small/foto-1.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-2.jpg"><img src="img/fotorama/small/foto-2.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-3.jpg"><img src="img/fotorama/small/foto-3.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-4.jpg"><img src="img/fotorama/small/foto-4.jpg" alt="foto"></a>
+						<a href="img/fotorama/foto-5.jpg"><img src="img/fotorama/small/foto-5.jpg" alt="foto"></a>
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="anchor" id="reviews"></div>
@@ -287,6 +285,6 @@
 <script src="libs/jquery-equalheights/jquery.equalheights.min.js"></script>
 <script src="libs/owl.carousel.2.1.0/owl.carousel.min.js"></script>
 <script src="libs/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
-<script src="js/common.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
